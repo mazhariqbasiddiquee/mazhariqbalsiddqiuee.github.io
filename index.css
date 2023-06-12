@@ -1,0 +1,132 @@
+.body{
+    background-color: #ffffff;
+   width: 100%;
+}
+
+
+
+#img{
+    width: 30%;
+
+}
+#main-div{
+    width: 100%;
+    margin: auto;
+
+    background: #fafaff;
+   
+
+
+}
+
+#main-div div{
+    margin-top: 60px;
+}
+
+
+#skills img{
+    width: 100%;
+}
+
+#projects img{
+    width: 40%;
+}
+
+
+/**  top -section */
+
+#nav-menu{
+   
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: auto;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    
+
+}
+
+#nav-menu a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+
+}
+#menu-content{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+#home{
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#profile-pic{
+   margin-left: 30px;
+    height: 250px;
+    border: solid 1px white;
+    border-radius: 250px;
+
+}
+
+#about{
+ 
+   
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+#skills{
+
+    
+
+
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
+#skills-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+
+
+#projects{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
+
+
+#first-projects , #second-projects{
+
+    border: 10px solid black;
+    display: flex;
+}
+
+
+
+#contact{
+
+    text-align: center;
+    width: 60%;
+    margin: auto;
+
+}
