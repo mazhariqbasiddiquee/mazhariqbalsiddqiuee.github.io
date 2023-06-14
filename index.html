@@ -16,16 +16,13 @@
     </div>
 <div id="menu-content">
 
-
-    <p id="home">Home</p>
-    <p id="about" class="about section">About</p>
-    <p id="skills">skills</p>
-    <p id="projects">Project</p>
-    <p  id="contact">Contact</p>
-    <p class="nav-link resume">
-        <a href="./resume.pdf" >Resume</a>
-    </p>
-
+ 
+    <a href="#home" class="nav-link home">Home</a>
+    <a href="#about" class="nav-link about">About</a>
+    <a href="#skills" class="nav-link skills">Skills</a>
+    <a href="#projects" class="nav-link projects">Projects</a>
+    <a href="#contact" class="nav-link contact">Contact</a>
+    <a href="./resume.pdf" class="nav-link resume" download="pdf">Resume</a>
 
 </div>
 
@@ -35,15 +32,17 @@
 
 <div id="main-div">
 
-<div id="home"  class="nav-link home">
+<div id="home" >
     <div>
         <h1> Hi from Mazhar</h1>
         <p>i am and aspiring Nodejs developer looking for an opertunity</p>
-     
+         <button  id="resume-button-2">
+            <a href="./resume.pdf" download="pdf"></a>
+            Download Resume</button>
 
     </div>
   <div>
-    <img  id="profile-pic" src="./IMG_20230605_233409-removebg-preview.jpg" alt="">
+    <img  class="home-img" src="./IMG_20230605_233409-removebg-preview.jpg" alt="">
   </div>
   </div>
     
@@ -61,7 +60,7 @@
          within the industry and specializing in specific areas of Node.js development are key 
          factors for professional growth and becoming a sought-after professional in web development.</p>
 </div>
-<div id="skills" class="nav-link skills">
+<div id="skills" >
  <h1>Skills</h1>
  <div id="skills-div">
 
@@ -112,10 +111,10 @@
 </div>
 </div>
 </div>
-<div id="projects"  class="nav-link projects">
+<div id="projects" >
     <h1>My projects</h1>
 
-    <div id="first-projects">
+    <div class="project-card">
 
         <img src="./Screenshot (220).png" alt="">
 
@@ -138,7 +137,7 @@
 
     </div>
 
-    <div id="second-projects">
+    <div class="project-card">
         <img src="./Screenshot (227).png" alt="">
 
         <div>
