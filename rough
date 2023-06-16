@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#home" class="nav-link home">Home</a></li>
+      <li><a href="#about" class="nav-link about">About</a></li>
+      <li><a href="#skills" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li><a href="resume.pdf" class="nav-link resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to my portfolio</h1>
+    <img src="professional_photo.jpg" class="home-img" alt="Professional Photo">
+  </section>
+
+  <section id="about" class="about section">
+    <h2>About Me</h2>
+    <p id="user-detail-name">Your Name</p>
+    <p id="user-detail-intro">Formal introduction about yourself.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-card">
+      <img src="skills_image1.jpg" class="skills-card-img" alt="Skills Image 1">
+      <p class="skills-card-name">HTML</p>
+    </div>
+    <div class="skills-card">
+      <img src="skills_image2.jpg" class="skills-card-img" alt="Skills Image 2">
+      <p class="skills-card-name">CSS</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="project1_image.jpg" alt="Project 1 Image">
+      <h3 class="project-title">Project 1</h3>
+      <p class="project-description">Description of Project 1</p>
+      <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+      <a href="https://github.com/project1" class="project-github-link">GitHub Repository</a>
+      <a href="https://project1-demo.com" class="project-deployed-link">Deployed Link</a>
+    </div>
+    <div class="project-card">
+      <img src="project2_image.jpg" alt="Project 2 Image">
+      <h3 class="project-title">Project 2</h3>
+      <p class="project-description">Description of Project 2</p>
+      <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+      <a href="https://github.com/project2" class="project-github-link">GitHub Repository</a>
+      <a href="https://project2-demo.com" class="project-deployed-link">Deployed Link</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p id="contact-github">GitHub: <a href="https://github.com/mygithub">mygithub</a></p>
+    <p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/mylinkedin">mylinkedin</a></p>
+    <p id="contact-phone">Phone: 123-456-7890</p>
+    <p id="contact-email">Email: myemail@example.com</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <button id="resume-button-1"><a href="resume.pdf" id="resume-link-1" target="_blank" download>Download Resume</a></button>
+  </section>
+
+  <section>
+    <h2>GitHub Statistics</h2>
+    <img src="https://github-readme-streak-stats.herokuapp.com/demo/" id="github-streak-stats" alt="GitHub Streak Stats">
+    <img src="https://github.com/anuraghazra/github-readme-stats" id="github-top-langs" alt="GitHub Top Languages">
+    <img src="https://github.com/anuraghazra/github-readme-stats" id="github-stats-card" alt="GitHub Stats Card">
+  </section>
+</body>
+</html>
