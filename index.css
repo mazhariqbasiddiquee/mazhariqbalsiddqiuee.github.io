@@ -70,8 +70,9 @@
 
     display: flex;
     justify-content: center;
-
+       padding-top: 4%;
     text-align: center;
+    padding-bottom: 7%;
 }
 
 .home-img{
@@ -94,7 +95,7 @@
 
 #about-content{
     background-color: #94bd94;
-    padding: 5%;
+    padding: 7%;
     width: 100%;
     
 
@@ -109,6 +110,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
+    padding-top: 7%;
 
 }
 #skills-div{
@@ -140,7 +142,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
-    padding: 5%;
+    padding: 8%;
 
 }
 
