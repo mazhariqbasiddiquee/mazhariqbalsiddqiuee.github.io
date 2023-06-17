@@ -29,7 +29,8 @@
     width: 100%;
 }
 
-#projects img{
+
+#projects img,#stats img{
     width: 40%;
 }
 
@@ -64,6 +65,7 @@
     
 
 }
+
 
 
 #home{
@@ -121,7 +123,7 @@
 }
 
 
-#projects{
+#projects,#stats,.nav-link contact{
     text-align: center;
     width: 60%;
     margin: auto;
@@ -133,6 +135,7 @@
 
     border: 10px solid black;
     display: flex;
+    margin:auto
 }
 
 
