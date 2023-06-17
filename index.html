@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
     <title>Document</title>
 </head>
 <body>
@@ -163,7 +170,10 @@
 
       <div>
         <h1>Days I Worked</h1>
-        <img  class="react-activity-calendar" style="width: 90%;"   src="./Screenshot (230).png" alt="">
+        <div class="react-activity-calendar" class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
       </div>
 
       <div>
@@ -195,6 +205,38 @@
 
 
 </div>
+
+
     
 </body>
+<script>
+   const currentYear = new Date().getFullYear();
+
+// Set the start date to January 1st of the current year
+const startDate = `${currentYear}-01-01`;
+
+// Get the current date
+const currentDate = new Date();
+
+// Set the end date to the current date
+const endDate = currentDate.toISOString().split('T')[0];
+
+// Remove the previous calendar
+const calendarContainer = document.querySelector(".calendar");
+calendarContainer.innerHTML = "";
+
+// Create a new calendar with the selected range
+GitHubCalendar(calendarContainer, "mazhariqbasiddiquee", {
+  responsive: true,
+  range: `${startDate}..${endDate}`,
+});
+
+
+
+
+
+
+
+
+</script
 </html>
