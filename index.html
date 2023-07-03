@@ -60,7 +60,7 @@
         <h1 style="margin: 0px;">from Mazhar</h1>
       </div>
         <h1 style="margin: 0px;">i am a Node.js Developer</h1>
-        <button  onclick="resume()" id="resume-button-2">
+        <button  onclick="resume()" id="resume-button">
           <a href="./Mazhar_siddiquee_resume.pdf" target="_blank" id="resume-link-2" download=""></a>
           <!-- <div> -->
               
@@ -69,7 +69,7 @@
       </button>
 
 
-      <button id="view-resume">view Resume</button>
+      <button id="resume-button-2">view Resume</button>
         
 
     </div>
@@ -274,7 +274,7 @@
        <div id="stats">
       <div>
         <h1>Days I Worked</h1>
-        <div  class="calendar">
+        <div  class="react-activity-calendar">
             <!-- Loading stuff -->
             Loading the data just for you.
         </div>
@@ -332,8 +332,8 @@ const currentDate = new Date();
 // Set the end date to the current date
 const endDate = currentDate.toISOString().split('T')[0];
 
-// Remove the previous calendar
-const calendarContainer = document.querySelector(".calendar");
+// Remove the previous calendarreact-activity-calendar
+const calendarContainer = document.querySelector(".react-activity-calendar");
 calendarContainer.innerHTML = "";
 
 // Create a new calendar with the selected range
@@ -350,7 +350,7 @@ function resume() {
 }
 
 
-document.getElementById("view-resume").addEventListener("click", function() {
+document.getElementById("resume-button-2").addEventListener("click", function() {
   window.open("Mazhar_siddiquee_resume.pdf", "_blank");
 });
 
