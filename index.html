@@ -27,7 +27,11 @@
     </div>
 
     <div id="dummy">
-        <button id="menu-toggle">Toggle Menu</button>
+        <button  style="margin-left: 35%;    id="menu-toggle" ><div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div></button>
 
         <div id="menu-content">
             <a href="#home" class="nav-link home">Home</a>
@@ -366,7 +370,10 @@ var menuToggle = document.getElementById('menu-toggle');
                 menuContent.classList.remove('show');
             });
         }
-
+            
+        function myFunction(x) {
+  x.classList.toggle("change");
+}
 
 
 
