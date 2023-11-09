@@ -290,10 +290,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
        <div id="stats">
       <div>
         <h1>Days I Worked</h1>
-        <div class="calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-      </div>
+        
      
 
       </div>
@@ -343,22 +340,20 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
 
 
     const currentYear = new Date().getFullYear();
-
+// Set the start date to January 1st of the current year
 const startDate = `${currentYear}-01-01`;
-
+// Get the current date
 const currentDate = new Date();
-
+// Set the end date to the current date
 const endDate = currentDate.toISOString().split('T')[0];
 // Remove the previous calendarreact-activity-calendar
 const calendarContainer = document.querySelector(".react-activity-calendar");
-// calendarContainer.innerHTML = "";
+calendarContainer.innerHTML = "";
 // Create a new calendar with the selected range
-
-
-   GitHubCalendar(".calendar", "mazhariqbasiddiquee", {
-
+GitHubCalendar(calendarContainer, "mazhariqbasiddiquee", {
+  responsive: true,
+  range: `${startDate}..${endDate}`,
 });
-
 
 
 

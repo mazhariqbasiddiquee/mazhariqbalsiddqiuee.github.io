@@ -157,12 +157,18 @@ body{
 #projects{
     padding-top: 8%;
 }
+
+.calendar{
+  width: 70%;
+}
+
 #projects img,#stats img{
   width: 30%;
 }
 .project-card{
    
     display: flex;
+    flex-direction: column;
     margin:auto;
     padding-top: 6%;
    
