@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/IonicaBizau/github-calendar@1.0.2/dist/github-calendar.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css">
   
     <title>Document</title>
@@ -42,13 +42,13 @@
 
 
 
-    <div id="main-div">
+    <div id="main-div" >
 
 
   <!-- home sectio start  -->
 
-     <div id="home" >
-        <div >
+     <div id="home"  >
+        <div style="margin-top: 3%;" >
           <div style="display: flex;">
              <h1 style="margin: 0px;"> Hi</h1>
              <img width="20%" height="20%"     src="https://c.tenor.com/z2xJqhCpneIAAAAM/wave-hand.gif"> 
@@ -347,10 +347,15 @@ const endDate = currentDate.toISOString().split('T')[0];
 const calendarContainer = document.querySelector(".react-activity-calendar");
 calendarContainer.innerHTML = "";
 // Create a new calendar with the selected range
-GitHubCalendar(calendarContainer, "mazhariqbasiddiquee", {
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Your GitHubCalendar code here
+    GitHubCalendar(calendarContainer, "mazhariqbasiddiquee", {
   responsive: true,
   range: `${startDate}..${endDate}`,
 });
+});
+
 
 
 
