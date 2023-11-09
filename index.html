@@ -35,7 +35,7 @@
             <a href="#skills" class="nav-link skills">Skills</a>
             <a href="#projects" class="nav-link projects">Projects</a>
             <a href="#contact" class="nav-link contact">Contact</a>
-            <a id="resume-button-1" id="resume-link-1" href="./Mazhar_siddiquee_resume.pdf" class="nav-link resume" download="">Resume</a>
+            <a id="resume-button-1" id="resume-link-1" href="https://drive.google.com/uc?export=download&id=11hTC5RYegOuHZG7819Vy5TFMnjW6rAdY" class="nav-link resume" target="_blank" onclick="openResume()">Resume</a>
         </div>
     </nav>
 
@@ -376,7 +376,11 @@ var menuToggle = document.getElementById('menu-toggle');
   x.classList.toggle("change");
 }
 
-
+function openResume() {
+  // Open a new window and load the PDF link
+  window.open("https://drive.google.com/file/d/11hTC5RYegOuHZG7819Vy5TFMnjW6rAdY/view?usp=drive_link", "_blank");
+  return false; // Prevent the default link behavior
+}
 
 </script
 </html>
