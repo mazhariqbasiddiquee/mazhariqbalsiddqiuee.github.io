@@ -238,6 +238,7 @@ body{
   }
   #about{
     width: 100%;
+    box-sizing: border-box;
   }
   #skills{
     width: 100%;
@@ -261,9 +262,9 @@ body{
 
 @media only screen and (max-width: 768px) {
 
-    #nav-menu{  
+  #nav-menu{  
   
-        width:100% ;
+        width:100vw;
         font-size: 12px;
         /* margin: auto; */
         padding: 0px;
@@ -305,6 +306,7 @@ body{
 }
    
   #about{
+    box-sizing: border-box;
     width: 100%;
     font-size: 12px;
     margin: 0px;
@@ -339,6 +341,11 @@ body{
 }
   
 }
+
+
+
+
+
 .container {
   display: inline-block;
   cursor: pointer;
