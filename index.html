@@ -11,7 +11,7 @@
 </script>
 <link
 rel="stylesheet"
-href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
     <title>Document</title>
 </head>
@@ -23,24 +23,29 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
 
       <nav id="nav-menu">
          <div>
-            <p>Mazhar</p>
+            <p style="box-sizing: border-box; padding-left: 3%;">Mazhar</p>
         </div>
-        <div id="menu-content">
-          <a href="#home" class="nav-link home">Home</a>
-          <a href="#about" class="nav-link about">About</a>
-          <a href="#skills" class="nav-link skills">Skills</a>
-          <a href="#projects" class="nav-link projects">Projects</a>
-          <a href="#contact" class="nav-link contact">Contact</a>
-          <a id="resume-button-1" id="resume-link-1" href="https://drive.google.com/uc?export=download&id=11hTC5RYegOuHZG7819Vy5TFMnjW6rAdY" class="nav-link resume"   download=""     onclick="openResume()">Resume</a>
-      </div>
-      
-        <div id="dummy">
-          <button id="menu-toggle"><div class="container" onclick="myFunction(this)">
-           <div class="bar1"></div>
-           <div class="bar2"></div>
-           <div class="bar3"></div>
-         </button>
-       </div>
+
+        <div id="drop-down">
+          <div id="menu-content">
+            <a href="#home" class="nav-link home">Home</a>
+            <a href="#about" class="nav-link about">About</a>
+            <a href="#skills" class="nav-link skills">Skills</a>
+            <a href="#projects" class="nav-link projects">Projects</a>
+            <a href="#contact" class="nav-link contact">Contact</a>
+            <a id="resume-button-1" id="resume-link-1" href="https://drive.google.com/uc?export=download&id=11hTC5RYegOuHZG7819Vy5TFMnjW6rAdY" class="nav-link resume"   download=""     onclick="openResume()">Resume</a>
+        </div>
+        
+          <div id="dummy">
+            <button id="menu-toggle" ><div class="container" onclick="myFunction(this)">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+           </button>
+         </div>
+
+        </div>
+       
 
        
     </nav>
@@ -215,7 +220,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                <h3>Tech-stacks</h3>
                 <p class="project-tech-stack">HTML | CSS | JavaScript </p>
                 <button>
-                  <a  class="project-github-link" href="https://github.com/viveKing21/tiny-toes-foolish-quiet-4224">Github</a>
+                  <a  class="project-github-link" href="https://github.com/mazhariqbasiddiquee/first-cry-E-commerce-">Github</a>
                 </button>
 
                 <button>
@@ -243,7 +248,7 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
                <h3>Tech-stacks</h3>
                 <p class="project-tech-stack">HTML | CSS | JavaScript |Nodejs</p>
                 <button>
-                  <a  class="project-github-link" href="https://github.com/AditiKulkarni1697/potent-voyage-8716">Github</a>
+                  <a  class="project-github-link" href="https://github.com/mazhariqbasiddiquee/Time-track-manage-time-">Github</a>
                 </button>
 
                   <button>
@@ -290,7 +295,10 @@ href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-ca
        <div id="stats">
       <div>
         <h1>Days I Worked</h1>
-      
+        <!-- <div class="calendar"> -->
+          <!-- Loading stuff -->
+          <!-- Loading the data just for you. -->
+      <!-- </div> -->
      
 
       </div>
@@ -352,10 +360,14 @@ const calendarContainer = document.querySelector(".react-activity-calendar");
 // Create a new calendar with the selected range
 
 
-   GitHubCalendar(".calendar", "mazhariqbasiddiquee", {
 
-});
 
+// Use a proxy
+GitHubCalendar(".calendar", "mazhariqbasiddiquee", {
+   proxy (mazhariqbasiddiquee) {
+     return fetch(`https://your-proxy.com/github?user=${mazhariqbasiddiquee}`)
+   }
+}).then(r => r.text())
 
 
 
@@ -367,6 +379,7 @@ document.getElementById("resume-view").addEventListener("click", function() {
 var menuToggle = document.getElementById('menu-toggle');
         var menuContent = document.getElementById('menu-content');
         var navLinks = menuContent.getElementsByClassName('nav-link');
+        let contentbutton=document.getElementsByClassName("container")
 
         menuToggle.addEventListener('click', function () {
             menuContent.classList.toggle('show');
@@ -375,6 +388,9 @@ var menuToggle = document.getElementById('menu-toggle');
         for (var i = 0; i < navLinks.length; i++) {
             navLinks[i].addEventListener('click', function() {
                 menuContent.classList.remove('show');
+                // menuToggle.classList.remove("change")
+                contentbutton.classList.remove("change")
+
             });
         }
             
