@@ -103,7 +103,6 @@ body{
 #about{
     padding-top: 10%;
    
-    text-align: center;
     width: 70%;
     margin: auto; 
    
@@ -114,7 +113,7 @@ body{
     padding-top: 7%;
     width: 100%;
     padding-bottom: 2%;
-    text-align: center;
+   
     
     
 }
@@ -125,32 +124,32 @@ body{
     
 
 
+  animation: fadeIn 1s forwards;
     text-align: center;
-
-  
     width: 70%;
     margin: auto;
     padding-top: 10%;
     padding-bottom: 5%;
 }
-#skills-div{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    padding-top: 1%;
-    background-color: black;
-    
+#skills-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center; /* Centers the items horizontally and vertically */
+  padding-top: 1%;
 }
 .skills-card{
     width: 80%;
     margin: auto;
     box-shadow:  rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     padding-bottom: 3%;
-    color: #fafaff;
     
+    transition: transform 0.3s ease;
 }
 .skills-card-img{
     width: 50%;
+    
+    height: auto;
     padding-top: 10%;
     transform: scale(1.1);
     transition: transform 0.9s;
@@ -170,8 +169,12 @@ body{
   width: 70%;
 }
 
-#projects img,#stats img{
+#projects img{
   width: 30%;
+}
+
+#stats img{
+  width: 50%;
 }
 .project-card{
    
